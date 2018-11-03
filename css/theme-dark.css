@@ -17,6 +17,12 @@
   -moz-osx-font-smoothing: grayscale; }
 
 /* Custom CSS */
+.vid-pop {width: 1024px;
+height: 800px;}
+.vid-pop iframe {
+  width: 100%;
+  height: 100%;
+}
 .c-price {
   background: transparent;
   width: 100%;
@@ -3909,8 +3915,7 @@ section {
       margin-bottom: 45px;
       padding: 0 30px; } }
 
-iframe {
-  width: 100% !important; }
+
 
 a:hover, a:active, a:focus {
   outline: none; }
@@ -4924,14 +4929,14 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
         font-size: 25px; } }
   .timeline-date {
     position: relative; }
-    .timeline-date:after {
+    /* .timeline-date:after {
       content: '';
       position: absolute;
       bottom: -15px;
       width: 40px;
       height: 3px;
       background: #a966d8;
-      left: 0; }
+      left: 0; } */
   .timeline-inverted > .timeline-item {
     float: right; }
     @media (max-width: 479px) {
@@ -4963,8 +4968,14 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
     .clients-slider img {
       width: 100%; }
   .clients .shadow {
-    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.05); }
-
+    box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    height: 120px;
+  }
+.clients iframe {
+  width: 100%;
+  height: 100%;
+}
 .post-list {
   position: relative; }
   .post-list-introduction p {
