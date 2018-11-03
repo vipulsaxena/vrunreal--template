@@ -17,13 +17,24 @@
   -moz-osx-font-smoothing: grayscale; }
 
 /* Custom CSS */
+.home-iframe{
+  text-align: center;
+  padding-top: 2%;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.home-iframe iframe{
+  width: 600px !important;
+  height: 400px;
+  margin: auto;
+}
 .timer-extend{
   padding-left: 6px;
 }
 .timer-parent h2{
   display: inline-block;
 }
-
 .ti-wand:before {
   content: "\e600"; }
 
@@ -4102,7 +4113,7 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
     color: #fff; }
   .home-isometric-wrapper {
     position: absolute;
-    top: 0;
+    /* top: 0; */
     left: 0;
     right: 0;
     bottom: 0;

@@ -208,7 +208,7 @@ var swiper = new Swiper('.post-slider-portfolio', {
 });
 
 // swiper config for each product slider (listings, product page etc)
-var swiper = new Swiper('.product-slider', {          
+var swiper = new Swiper('.product-slider', {
         spaceBetween: 30
 });
 
@@ -252,7 +252,7 @@ $(".navbar-nav li a[href^='#']").on('click', function(e) {
 // You need API key - https://developers.google.com/maps/documentation/javascript/get-api-key
 // place your api key in link to script  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
 var map;
-var mapAddress = new google.maps.LatLng(52.406374, 16.925168100000064);
+var mapAddress = new google.maps.LatLng(28.565212, 77.321534);
 
 function initialize() {
 
