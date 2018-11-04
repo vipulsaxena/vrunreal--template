@@ -17,6 +17,9 @@
   -moz-osx-font-smoothing: grayscale; }
 
 /* Custom CSS */
+  .force-inline {
+    display: inline-block !important;
+  }
 .vid-pop {width: 1024px;
 height: 800px;}
 .vid-pop iframe {
@@ -1137,7 +1140,7 @@ height: 800px;}
 .swiper-wrapper {
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 160px;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1173,7 +1176,7 @@ height: 800px;}
   -ms-flex-negative: 0;
   flex-shrink: 0;
   width: 100%;
-  height: 100%;
+    height: 120px;
   position: relative; }
 
 .swiper-container-autoheight,
@@ -3851,7 +3854,9 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
   margin: 0 auto;
-  width: 100%; }
+  width: auto;
+  max-height: 680px;
+}
 
 body {
   background: #333;
@@ -3888,7 +3893,7 @@ section {
       padding: 30px 0; } }
 
 .about-introduction, .testimonials-introduction, .services-introduction, .portfolio-introduction, .timeline-introduction, .clients-introduction, .post-list-introduction, .team-introduction, .pricing-introduction, .contact-introduction, .product-introduction, .cart-section-introduction {
-  margin-bottom: 120px; }
+  margin-bottom: 20px; }
   .about-introduction p, .testimonials-introduction p, .services-introduction p, .portfolio-introduction p, .timeline-introduction p, .clients-introduction p, .post-list-introduction p, .team-introduction p, .pricing-introduction p, .contact-introduction p, .product-introduction p, .cart-section-introduction p {
     font-size: 14px;
     color: #262626;
@@ -4058,7 +4063,7 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
 .home {
   background: url("../img/home-bg.png") no-repeat scroll center center/cover #262626;
   padding-top: 180px;
-  min-height: 100vh;
+  min-height: 40vh;
   position: relative; }
   @media (max-width: 479px) {
     .home {
@@ -4369,7 +4374,8 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
     margin: 90px auto 60px;
     position: relative; }
     .home-buttons a {
-      padding: 15px 30px; }
+      padding: 15px 30px;
+        font-weight: normal;}
   .home .left-arrow, .home .right-arrow, .home .left-arrow-negative, .home .right-arrow-negative {
     top: 50%; }
 
@@ -4569,8 +4575,8 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
   @media (max-width: 479px) {
     .about-number-box div {
       padding: 30px 0; } }
-  .about-number-box div:first-child {
-    border-right: 1px solid rgba(170, 170, 170, 0.5); }
+  /* .about-number-box div:first-child {
+    border-right: 1px solid rgba(170, 170, 170, 0.5); } */
     @media (min-width: 480px) and (max-width: 991px) {
       .about-number-box div:first-child {
         border-right: none;
@@ -4584,10 +4590,11 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
   color: #aaa;
   line-height: 26px; }
 .about-slider-half {
-  display: inline;
-  float: left;
+  display: block;
   width: 50%;
-  box-sizing: border-box; }
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;}
   @media (min-width: 480px) and (max-width: 991px) {
     .about-slider-half {
       width: 100%;
@@ -4820,15 +4827,17 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
         border-color: white;
         margin-top: 15px; }
   .portfolio-slide .carousel-indicators li {
-    border: medium none;
-    border-radius: 0;
-    float: none;
-    height: auto;
-    margin-bottom: 5px;
-    margin-left: 0;
-    margin-right: 5px !important;
-    margin-top: 0;
-    width: 70px; }
+      border: medium none;
+      border-radius: 0;
+      float: none;
+      height: auto;
+      margin-bottom: 5px;
+      margin-left: 0;
+      margin-right: 5px !important;
+      margin-top: 0;
+      width: 70px;
+      max-height: 40px;
+      overflow: hidden;}
   .portfolio-slide .carousel-indicators img {
     border: 2px solid #262626;
     float: left;
@@ -4955,7 +4964,11 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
 
 .timeline-body > p + p {
   margin-top: 5px; }
-
+.block-block{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .clients {
   background: #262626; }
   .clients-introduction p {
@@ -4972,10 +4985,7 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
     overflow: hidden;
     height: 120px;
   }
-.clients iframe {
-  width: 100%;
-  height: 100%;
-}
+
 .post-list {
   position: relative; }
   .post-list-introduction p {
@@ -6307,17 +6317,17 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
     width: 100%; }
   .order fieldset {
     margin: 0 0 30px; }
-
+p {    font-weight: normal !important; }
 .dark-theme {
   background: #141414; }
   .dark-theme p {
-    color: #aaa; }
+    color: #dcdcdc; }
   .dark-theme .white-bg {
     background: #141414 !important; }
   .dark-theme .contact.section {
-    background: #262626 none repeat scroll 0 0 !important; }
+    background: #26262680 none repeat scroll 0 0 !important; }
   .dark-theme .contact-data ul {
-    background: #141414 none repeat scroll 0 0;
+    background: #141414c9 none repeat scroll 0 0;
     float: left;
     margin-bottom: 60px;
     width: 100%; }
@@ -6331,18 +6341,19 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
   .dark-theme .navbar {
     background: #333 none repeat scroll 0 0; }
   .dark-theme .section {
-    background: #262626; }
+    background: #26262680; }
     .dark-theme .section.home {
       background-image: none; }
     .dark-theme .section:nth-of-type(even) {
-      background: #141414; }
+      background: #0000008a; }
     .dark-theme .section .services-box, .dark-theme .section .pricing-box, .dark-theme .section .post-entry {
       background: #262626 none repeat scroll 0 0;
       margin-bottom: 30px;
       padding: 30px; }
     .dark-theme .section .testimonials-container, .dark-theme .section .team-member, .dark-theme .section .timeline-item {    color: #fff;
       border: none;
-      height: 200px;}
+      height: 180px;
+  background: #262626;}
       .dark-theme .section .testimonials-container a, .dark-theme .section .team-member a, .dark-theme .section .timeline-item a {
         color: #fff; }
     .dark-theme .section .about-counter {
