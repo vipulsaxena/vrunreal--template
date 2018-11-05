@@ -20,6 +20,11 @@
   .force-inline {
     display: inline-block !important;
   }
+  @media (max-width: 980px) {
+    #about {
+      min-height: 980px;
+    }
+  }
 .vid-pop {width: 1024px;
 height: 800px;}
 .vid-pop iframe {
