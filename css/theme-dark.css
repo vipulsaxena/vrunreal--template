@@ -39,6 +39,12 @@ height: 800px;}
   border-bottom: 2px solid #aaa;
   color: #a966d8;
 }
+.so_img{
+  position: absolute;
+  width: 150px;
+  top: -28px;
+  right: -8px;
+}
 .home-iframe{
   text-align: center;
   padding-top: 2%;
@@ -5723,7 +5729,7 @@ dd, h1 small, h1 .small, h2 small, h2 .small, h3 small, h3 .small, h4 small, h4 
     margin-bottom: 60px; }
     .contact-data ul li {
       display: inline-block;
-      width: 33.3333%;
+      width: 24.3333%;
       float: left;
       text-align: center;
       padding: 30px 0;
