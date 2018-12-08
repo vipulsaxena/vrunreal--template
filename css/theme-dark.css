@@ -22,7 +22,13 @@
   }
   @media (max-width: 980px) {
     #about {
-      min-height: 980px;
+      min-height: 1040px;
+    }
+    .so_img {
+      position: absolute;
+      width: 150px;
+      top: 302px !important;
+      right: 4px !important;
     }
   }
 .vid-pop {width: 1024px;
