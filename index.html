@@ -238,6 +238,7 @@
                     <div class="services-box text-center shadow">
                         <span class="icon ti-crown"></span>
                         <h4>VR BIRTHDAY</h4>
+                        <img alt="" title="" src="img/label.png" class="so_img">
                         <p class="fixed-height"> The only place dedicated for virtual reality. Now your friends, families and colleagues can all come to our location and celebrate your birthday in style. By adding virtual reality to your kids party, things will always be happening!
                         </p>
                         <a href="#" class="btn btn-margin btn-default btn-lg" data-toggle="modal" data-target="#service-02">More</a>
@@ -248,7 +249,6 @@
                     <div class="services-box text-center shadow">
                         <span class="icon ti-gift"></span>
                         <h4>VR GIFT CARD</h4>
-                        <img alt="" title="" src="img/label.png" class="so_img">
                         <p class="fixed-height">Gift online with special packages to your friends and family. Let your friends and family know more about the upcoming technology advancements and their experiences.
                         </p>
                         <a href="#" class="btn btn-margin btn-default btn-lg" data-toggle="modal" data-target="#service-03">More</a>
@@ -414,13 +414,26 @@
                                         <h4>VR GIFT CARD</h4>
                                         <p>Whether it be a job well done to a deserving employee, a special present or gift 'just because' -
                                         <br> Your friends, family and colleagues will love you for it! <br></p>
+                                        <p style="text-align:center">
+                                          If you wish to purchase for a family / group, simply select how many vouchers you would like to purchase and customize name & message to suit.<br>
+                                          At Virtual Reality Studio we host 6 VR booths in an arcade-like fashion. These 6 booths can be enjoyed simultaneously with group chat, multiplayer & a vast selection of games & experiences. Thus making VR UNREAL the ultimate destination for family/ team bonding!
+                                        </p>
                                     </div>
-
-                                    <p style="text-align:center">
-                                     If you wish to purchase for a family / group, simply select how many vouchers you would like to purchase and customize name & message to suit.<br>
-                                    At Virtual Reality Studio we host 6 VR booths in an arcade-like fashion. These 6 booths can be enjoyed simultaneously with group chat, multiplayer & a vast selection of games & experiences. Thus making VR UNREAL the ultimate destination for family/ team bonding!
-                                    </p>
-
+                                    <form action="https://formspree.io/your@email.com" method="POST">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="email" type="email" name="email" placeholder="Email" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="mobile" type="number" name="mobile" placeholder="Mobile Number" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea type="text" class="form-control" id="message" name="message" placeholder="Message" required style="height:140px;"></textarea>
+                                        </div>
+                                        <button type="submit" value="Send" type="button" id="submit" name="submit" class="btn btn-margin btn-primary btn-lg text-center" style="float: right;" >Book Now</button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
